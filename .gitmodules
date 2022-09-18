@@ -1,0 +1,3 @@
+[submodule "cd0581-building-a-reproducible-model-workflow-exercises"]
+	path = cd0581-building-a-reproducible-model-workflow-exercises
+	url = https://github.com/udacity/cd0581-building-a-reproducible-model-workflow-exercises.git
