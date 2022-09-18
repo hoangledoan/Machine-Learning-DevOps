@@ -1,0 +1,23 @@
+{
+    "os": "Windows-10-10.0.22000-SP0",
+    "python": "3.9.13",
+    "heartbeatAt": "2022-09-18T08:53:04.847202",
+    "startedAt": "2022-09-18T08:53:04.049621",
+    "docker": null,
+    "gpu": "NVIDIA GeForce RTX 3050 Ti Laptop GPU",
+    "gpu_count": 1,
+    "cpu_count": 16,
+    "cuda": null,
+    "args": null,
+    "state": "running",
+    "program": "<python with no main file>",
+    "git": {
+        "remote": "https://github.com/hoangledoan/Machine-Learning-DevOps.git",
+        "commit": "c1bdf956f50c27bab1b3323516ebf75c662d29f0"
+    },
+    "email": "ge59qat@mytum.de",
+    "root": "D:/programming/Machine-Learning-DevOps",
+    "host": "MSI",
+    "username": "PC",
+    "executable": "d:\\programming\\Machine-Learning-DevOps\\venv\\Scripts\\python.exe"
+}
