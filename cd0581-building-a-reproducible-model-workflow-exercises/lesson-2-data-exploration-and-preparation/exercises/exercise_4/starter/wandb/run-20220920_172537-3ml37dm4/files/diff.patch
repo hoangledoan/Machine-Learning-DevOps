@@ -1,0 +1,105 @@
+diff --git a/cd0581-building-a-reproducible-model-workflow-exercises/lesson-1-machine-learning-pipelines/exercises/exercise_1/starter/upload_artifact.py b/cd0581-building-a-reproducible-model-workflow-exercises/lesson-1-machine-learning-pipelines/exercises/exercise_1/starter/upload_artifact.py
+index cb43d39..0bceb7e 100644
+--- a/cd0581-building-a-reproducible-model-workflow-exercises/lesson-1-machine-learning-pipelines/exercises/exercise_1/starter/upload_artifact.py
++++ b/cd0581-building-a-reproducible-model-workflow-exercises/lesson-1-machine-learning-pipelines/exercises/exercise_1/starter/upload_artifact.py
+@@ -29,7 +29,16 @@ def go(args):
+     # ``artifact.add_file``, and log the artifact to the run using ``run.log_artifact``.
+ 
+     # YOUR CODE HERE
+-
++    run  = wandb.init(project='exercise_1_again', job_type='upload_file')
++    artifact = wandb.Artifact(
++        name= args.artifact_name,
++        type = args.artifact_type,
++        description= args.artifact_description,
++    )
++    
++    artifact.add_file(args.input_file)
++    logger.info("Logging artifact")
++    run.log_artifact(artifact)
+ 
+ if __name__ == "__main__":
+     parser = argparse.ArgumentParser(
+diff --git a/cd0581-building-a-reproducible-model-workflow-exercises/lesson-1-machine-learning-pipelines/exercises/exercise_2/solution/conda.yml b/cd0581-building-a-reproducible-model-workflow-exercises/lesson-1-machine-learning-pipelines/exercises/exercise_2/solution/conda.yml
+index 42cd9c8..e74843c 100644
+--- a/cd0581-building-a-reproducible-model-workflow-exercises/lesson-1-machine-learning-pipelines/exercises/exercise_2/solution/conda.yml
++++ b/cd0581-building-a-reproducible-model-workflow-exercises/lesson-1-machine-learning-pipelines/exercises/exercise_2/solution/conda.yml
+@@ -6,4 +6,4 @@ dependencies:
+   - requests=2.24.0
+   - pip=20.3.3
+   - pip:
+-      - wandb==0.10.21
+\ No newline at end of file
++      - wandb==0.12.17
+\ No newline at end of file
+diff --git a/cd0581-building-a-reproducible-model-workflow-exercises/lesson-2-data-exploration-and-preparation/exercises/exercise_4/solution/EDA.ipynb b/cd0581-building-a-reproducible-model-workflow-exercises/lesson-2-data-exploration-and-preparation/exercises/exercise_4/solution/EDA.ipynb
+index 117cb01..ce1c1af 100644
+--- a/cd0581-building-a-reproducible-model-workflow-exercises/lesson-2-data-exploration-and-preparation/exercises/exercise_4/solution/EDA.ipynb
++++ b/cd0581-building-a-reproducible-model-workflow-exercises/lesson-2-data-exploration-and-preparation/exercises/exercise_4/solution/EDA.ipynb
+@@ -152690,7 +152690,7 @@
+  ],
+  "metadata": {
+   "kernelspec": {
+-   "display_name": "Python 3",
++   "display_name": "Python 3 (ipykernel)",
+    "language": "python",
+    "name": "python3"
+   },
+@@ -152704,7 +152704,7 @@
+    "name": "python",
+    "nbconvert_exporter": "python",
+    "pygments_lexer": "ipython3",
+-   "version": "3.8.8"
++   "version": "3.9.13"
+   },
+   "widgets": {
+    "application/vnd.jupyter.widget-state+json": {
+diff --git a/cd0581-building-a-reproducible-model-workflow-exercises/lesson-2-data-exploration-and-preparation/exercises/exercise_4/solution/conda.yml b/cd0581-building-a-reproducible-model-workflow-exercises/lesson-2-data-exploration-and-preparation/exercises/exercise_4/solution/conda.yml
+index f216511..494cf5b 100644
+--- a/cd0581-building-a-reproducible-model-workflow-exercises/lesson-2-data-exploration-and-preparation/exercises/exercise_4/solution/conda.yml
++++ b/cd0581-building-a-reproducible-model-workflow-exercises/lesson-2-data-exploration-and-preparation/exercises/exercise_4/solution/conda.yml
+@@ -3,7 +3,7 @@ channels:
+   - conda-forge
+   - defaults
+ dependencies:
+-  - jupyterlab=3.0.12
++  - jupyter=1.0.0
+   - seaborn=0.11.1
+   - pandas=1.2.3
+   - pip=20.3.3
+diff --git a/cd0581-building-a-reproducible-model-workflow-exercises/lesson-2-data-exploration-and-preparation/exercises/exercise_4/starter/MLproject b/cd0581-building-a-reproducible-model-workflow-exercises/lesson-2-data-exploration-and-preparation/exercises/exercise_4/starter/MLproject
+index e69de29..ccd1fe1 100644
+--- a/cd0581-building-a-reproducible-model-workflow-exercises/lesson-2-data-exploration-and-preparation/exercises/exercise_4/starter/MLproject
++++ b/cd0581-building-a-reproducible-model-workflow-exercises/lesson-2-data-exploration-and-preparation/exercises/exercise_4/starter/MLproject
+@@ -0,0 +1,7 @@
++name: download_data
++conda_env: conda.yml
++
++entry_points: 
++  main:
++    command: >-
++      jupyter notebook
+\ No newline at end of file
+diff --git a/cd0581-building-a-reproducible-model-workflow-exercises/lesson-2-data-exploration-and-preparation/exercises/exercise_4/starter/conda.yml b/cd0581-building-a-reproducible-model-workflow-exercises/lesson-2-data-exploration-and-preparation/exercises/exercise_4/starter/conda.yml
+index f216511..db96984 100644
+--- a/cd0581-building-a-reproducible-model-workflow-exercises/lesson-2-data-exploration-and-preparation/exercises/exercise_4/starter/conda.yml
++++ b/cd0581-building-a-reproducible-model-workflow-exercises/lesson-2-data-exploration-and-preparation/exercises/exercise_4/starter/conda.yml
+@@ -3,11 +3,13 @@ channels:
+   - conda-forge
+   - defaults
+ dependencies:
+-  - jupyterlab=3.0.12
++  - jupyter=1.0.0
+   - seaborn=0.11.1
+   - pandas=1.2.3
+   - pip=20.3.3
+-  - pandas-profiling=2.11.0
++  - pandas-profiling=2.8.0
+   - pyarrow=2.0
++  - Flask==2.1.0
++  - jinja2==3.0.3
+   - pip:
+-      - wandb==0.10.21
+\ No newline at end of file
++      - wandb==0.12.17
+\ No newline at end of file

@@ -29,7 +29,16 @@ def go(args):
     # ``artifact.add_file``, and log the artifact to the run using ``run.log_artifact``.
 
     # YOUR CODE HERE
-
+    run  = wandb.init(project='exercise_1_again', job_type='upload_file')
+    artifact = wandb.Artifact(
+        name= args.artifact_name,
+        type = args.artifact_type,
+        description= args.artifact_description,
+    )
+    
+    artifact.add_file(args.input_file)
+    logger.info("Logging artifact")
+    run.log_artifact(artifact)
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(

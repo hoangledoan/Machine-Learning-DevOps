@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/programming/Machine-Learning-DevOps/cd0581-building-a-reproducible-model-workflow-exercises/lesson-2-data-exploration-and-preparation/exercises/exercise_4/solution/mlruns/0/b1c0d281036d4991be2c4f5c70e1a7cf/artifacts
+end_time: 1663624069392
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+name: ''
+run_id: b1c0d281036d4991be2c4f5c70e1a7cf
+run_uuid: b1c0d281036d4991be2c4f5c70e1a7cf
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1663623393211
+status: 4
+tags: []
+user_id: PC

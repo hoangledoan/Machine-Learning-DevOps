@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/programming/Machine-Learning-DevOps/cd0581-building-a-reproducible-model-workflow-exercises/lesson-1-machine-learning-pipelines/exercises/exercise_2/solution/mlruns/0/266754c5ff8c474497f9ca9d999fe0be/artifacts
+end_time: 1663669435170
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+name: ''
+run_id: 266754c5ff8c474497f9ca9d999fe0be
+run_uuid: 266754c5ff8c474497f9ca9d999fe0be
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1663669432464
+status: 4
+tags: []
+user_id: PC

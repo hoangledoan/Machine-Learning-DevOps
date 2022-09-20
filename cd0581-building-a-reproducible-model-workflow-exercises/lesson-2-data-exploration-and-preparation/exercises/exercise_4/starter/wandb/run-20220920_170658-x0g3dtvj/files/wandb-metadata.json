@@ -1,0 +1,23 @@
+{
+    "os": "Windows-10-10.0.22000-SP0",
+    "python": "3.9.13",
+    "heartbeatAt": "2022-09-20T15:07:01.822901",
+    "startedAt": "2022-09-20T15:06:58.738593",
+    "docker": null,
+    "gpu": "NVIDIA GeForce RTX 3050 Ti Laptop GPU",
+    "gpu_count": 1,
+    "cpu_count": 16,
+    "cuda": null,
+    "args": null,
+    "state": "running",
+    "program": "Untitled.ipynb",
+    "root": "D:/programming/Machine-Learning-DevOps",
+    "git": {
+        "remote": "https://github.com/hoangledoan/Machine-Learning-DevOps.git",
+        "commit": "e7079425e9e510df4341ed2e2bbf60c567e82662"
+    },
+    "email": "ge59qat@mytum.de",
+    "host": "MSI",
+    "username": "PC",
+    "executable": "C:\\Users\\PC\\.conda\\envs\\mlflow-520690d1b5ee3415086097f85867e680d1c79ad4\\python.exe"
+}
