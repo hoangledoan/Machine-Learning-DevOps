@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/programming/Machine-Learning-DevOps/cd0581-building-a-reproducible-model-workflow-exercises/lesson-3-data-validation/exercises/exercise_7/starter/mlruns/0/b930e07bf7944c97a63cf6d946d0c583/artifacts
+end_time: 1663714281903
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+name: ''
+run_id: b930e07bf7944c97a63cf6d946d0c583
+run_uuid: b930e07bf7944c97a63cf6d946d0c583
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1663714178204
+status: 4
+tags: []
+user_id: PC

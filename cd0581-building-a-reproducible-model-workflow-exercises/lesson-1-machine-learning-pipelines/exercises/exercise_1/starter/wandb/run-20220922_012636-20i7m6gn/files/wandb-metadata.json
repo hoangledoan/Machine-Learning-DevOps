@@ -1,0 +1,33 @@
+{
+    "os": "Linux-5.10.16.3-microsoft-standard-WSL2-x86_64-with-glibc2.10",
+    "python": "3.8.13",
+    "heartbeatAt": "2022-09-21T23:26:38.309199",
+    "startedAt": "2022-09-21T23:26:36.404837",
+    "docker": null,
+    "gpu": "NVIDIA GeForce RTX 3050 Ti Laptop GPU",
+    "gpu_count": 1,
+    "cpu_count": 16,
+    "cuda": null,
+    "args": [
+        "--input_file",
+        "zen.txt",
+        "--artifact_name",
+        "zen_of_python",
+        "--artifact_type",
+        "text_file",
+        "--artifact_description",
+        "20 aphorisms about writing good python code"
+    ],
+    "state": "running",
+    "program": "upload_artifact.py",
+    "codePath": "cd0581-building-a-reproducible-model-workflow-exercises/lesson-1-machine-learning-pipelines/exercises/exercise_1/starter/upload_artifact.py",
+    "git": {
+        "remote": "https://github.com/hoangledoan/Machine-Learning-DevOps.git",
+        "commit": "ec1b07dde01c319c55da1494ea9f661d3050ec7f"
+    },
+    "email": null,
+    "root": "/mnt/d/programming/Machine-Learning-DevOps",
+    "host": "MSI",
+    "username": "hoangledoan",
+    "executable": "/home/hoangledoan/miniconda3/envs/udacity/bin/python"
+}

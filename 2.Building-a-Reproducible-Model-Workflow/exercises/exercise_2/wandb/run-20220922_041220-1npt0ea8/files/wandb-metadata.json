@@ -1,0 +1,33 @@
+{
+    "os": "Linux-5.10.16.3-microsoft-standard-WSL2-x86_64-with-glibc2.31",
+    "python": "3.10.6",
+    "heartbeatAt": "2022-09-22T02:12:22.078253",
+    "startedAt": "2022-09-22T02:12:20.140570",
+    "docker": null,
+    "gpu": "NVIDIA GeForce RTX 3050 Ti Laptop GPU",
+    "gpu_count": 1,
+    "cpu_count": 16,
+    "cuda": null,
+    "args": [
+        "--file_url",
+        "https://raw.githubusercontent.com/scikit-learn/scikit-learn/4dfdfb4e1bb3719628753a4ece995a1b2fa5312a/sklearn/datasets/data/iris.csv",
+        "--artifact_name",
+        "iris",
+        "--artifact_type",
+        "raw_data",
+        "--artifact_description",
+        "This data sets consists of 3 different types of irises\u2019 (Setosa, Versicolour, and Virginica) petal and sepal length"
+    ],
+    "state": "running",
+    "program": "/mnt/d/programming/Machine-Learning-DevOps/2.Building-a-Reproducible-Model-Workflow/exercises/exercise_2/download_data.py",
+    "codePath": "2.Building-a-Reproducible-Model-Workflow/exercises/exercise_2/download_data.py",
+    "git": {
+        "remote": "https://github.com/hoangledoan/Machine-Learning-DevOps.git",
+        "commit": "ec1b07dde01c319c55da1494ea9f661d3050ec7f"
+    },
+    "email": null,
+    "root": "/mnt/d/programming/Machine-Learning-DevOps",
+    "host": "MSI",
+    "username": "hoangledoan",
+    "executable": "/home/hoangledoan/miniconda3/envs/mlflow-404ab775b36a066f2150e2a16c7676b5a4233548/bin/python"
+}

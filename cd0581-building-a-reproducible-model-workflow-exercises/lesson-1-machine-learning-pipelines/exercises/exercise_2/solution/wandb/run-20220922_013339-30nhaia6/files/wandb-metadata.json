@@ -1,0 +1,33 @@
+{
+    "os": "Linux-5.10.16.3-microsoft-standard-WSL2-x86_64-with-glibc2.31",
+    "python": "3.10.6",
+    "heartbeatAt": "2022-09-21T23:33:41.460519",
+    "startedAt": "2022-09-21T23:33:39.568888",
+    "docker": null,
+    "gpu": "NVIDIA GeForce RTX 3050 Ti Laptop GPU",
+    "gpu_count": 1,
+    "cpu_count": 16,
+    "cuda": null,
+    "args": [
+        "--file_url",
+        "https://raw.githubusercontent.com/scikit-learn/scikit-learn/4dfdfb4e1bb3719628753a4ece995a1b2fa5312a/sklearn/datasets/data/iris.csv",
+        "--artifact_name",
+        "iris",
+        "--artifact_type",
+        "raw_data",
+        "--artifact_description",
+        "The sklearn IRIS dataset"
+    ],
+    "state": "running",
+    "program": "/mnt/d/programming/Machine-Learning-DevOps/cd0581-building-a-reproducible-model-workflow-exercises/lesson-1-machine-learning-pipelines/exercises/exercise_2/solution/download_data.py",
+    "codePath": "cd0581-building-a-reproducible-model-workflow-exercises/lesson-1-machine-learning-pipelines/exercises/exercise_2/solution/download_data.py",
+    "git": {
+        "remote": "https://github.com/hoangledoan/Machine-Learning-DevOps.git",
+        "commit": "ec1b07dde01c319c55da1494ea9f661d3050ec7f"
+    },
+    "email": null,
+    "root": "/mnt/d/programming/Machine-Learning-DevOps",
+    "host": "MSI",
+    "username": "hoangledoan",
+    "executable": "/home/hoangledoan/miniconda3/envs/mlflow-5daac8e92275e8dddf3caefc785f4a790d74a6e6/bin/python"
+}

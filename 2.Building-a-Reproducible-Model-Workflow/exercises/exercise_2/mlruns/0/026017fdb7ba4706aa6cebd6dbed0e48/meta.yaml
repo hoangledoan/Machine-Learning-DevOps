@@ -1,0 +1,16 @@
+artifact_uri: file:///mnt/d/programming/Machine-Learning-DevOps/2.Building-a-Reproducible-Model-Workflow/exercises/exercise_2/mlruns/0/026017fdb7ba4706aa6cebd6dbed0e48/artifacts
+deleted_time: null
+end_time: null
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+name: ''
+run_id: 026017fdb7ba4706aa6cebd6dbed0e48
+run_uuid: 026017fdb7ba4706aa6cebd6dbed0e48
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1663813459430
+status: 1
+tags: []
+user_id: hoangledoan
